@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="styles.css" />
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Activity 1</title>
+	</head>
+	<body>
+		<div class="parentDiv-key">
+			<div class="Div-key" id="firstDiv">
+				<fieldset>
+					<legend>Key Encryption Process (Person A)</legend>
+					<input
+						class="private-key-A"
+						type="text"
+						placeholder="Input private key"
+					/><br />
+					<input
+						class="generator-A"
+						type="text"
+						placeholder="Input generator"
+					/>
+					<br />
+					<input
+						class="prime-number-A"
+						type="text"
+						placeholder="Input prime number"
+					/>
+					<br />
+					<input
+						type="text"
+						class="shared-key-A"
+						placeholder="Input shared key"
+					/>
+					<br />
+					<br />
+					<a href="#" class="btn-A">Encrypt</a>
+				</fieldset>
+				<div class="displayA">
+					<div class="display-shared-key-A">Shared Key: </div>
+					<div class="display-binary-key-A">Binary Key: </div>
+				</div>
+			</div>
+
+			<div class="Div-key" id="secondDiv">
+				<fieldset>
+					<legend>Key Encryption Process (Person B)</legend>
+					<input
+						class="private-key-B"
+						type="text"
+						placeholder="Input private key"
+					/><br />
+					<input
+						class="generator-B"
+						type="text"
+						placeholder="Input generator"
+					/>
+					<br />
+					<input
+						class="prime-number-B"
+						type="text"
+						placeholder="Input prime number"
+					/>
+					<br />
+					<input
+						type="text"
+						class="shared-key-B"
+						placeholder="Input shared key"
+					/>
+					<br />
+					<br />
+					<a href="#" class="btn-B">Encrypt</a>
+				</fieldset>
+				<div class="displayB">
+					<div class="display-shared-key-B">Shared Key: </div>
+					<div class="display-binary-key-B">Binary Key: </div>
+			</div>
+		</div>
+		<div class="parentDiv-msg">
+			<div class="Div-msg" id="thirdDiv">
+				<fieldset>
+					<legend>Message Encryption Process</legend>
+					<input
+						class="message-en"
+						type="text"
+						placeholder="Input message"
+					/><br />
+					<input
+						class="message-binary-key-en"
+						type="text"
+						placeholder="Input binary key"
+					/><br />
+					<br />
+					<a href="#" class="btn-encrypt">Encrypt</a>
+				</fieldset>
+				<div class="display-encrypted-msg">
+					<div class="encrypted-msg">Encrypted Message: </div>
+				</div>
+			</div>
+
+			<div class="Div-msg" id="fourthDiv">
+				<fieldset>
+					<legend>Message Decryption Process</legend>
+					<input
+						class="message-dec"
+						type="text"
+						placeholder="Input message"
+					/><br />
+					<input
+						class="message-binary-key-dec"
+						type="text"
+						placeholder="Input binary key"
+					/><br />
+					<br />
+					<a href="#" class="btn-decrypt">Encrypt</a>
+				</fieldset>
+				<div class="display-decrypted-msg">
+					<div class="decrypted-msg">Decrypted Message: </div>
+				</div>
+			</div>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>
