@@ -75,14 +75,10 @@ const decToBinary = function (num) {
 
 const resetA = function () {
     pKeyA.value = generatorA.value = pNumA.value = '';
-
-
 }
 
 const resetB = function () {
     pKeyB.value = generatorB.value = pNumB.value = '';
-
-
 }
 
 const hideContent = function () {
@@ -222,7 +218,6 @@ const xorEncrypt = function (par1, par2) {
         xorDecrypt(codedMessage, par1);
     }
 }
-
 
 
 /*-------------------Button Handlers-----------------*/
