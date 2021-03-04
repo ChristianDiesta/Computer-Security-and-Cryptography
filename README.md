@@ -1,1 +1,2 @@
-# Computer-Security-and-Cryptography
+Computer-Security-and-Cryptography (CS Elec 2) 
+Activities
