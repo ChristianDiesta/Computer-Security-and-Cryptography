@@ -12,8 +12,7 @@ const decryptBtn = document.querySelector('.btn-decrypt');
 
 const primeP = 967854201045824;
 const primeQ = 136574856103251;
-// const primeP = 11;
-// const primeQ = 13;
+
 let n;
 let totient;
 const e = 5;
@@ -79,6 +78,7 @@ decryptBtn.addEventListener('click', function () {
     let encryptedTxt = Number(encryptedText.value);
 
     //decryption Process
+    //Javascript displays long numbers as infinity, thus making 'm' Not a number(NaN)
     let m = encryptedTxt ** d % n;
 
     decMsg.textContent = `Decrypted Message: ${decryptedMsg}`;
